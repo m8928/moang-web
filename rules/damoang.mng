@@ -1,5 +1,5 @@
 {
-    "version": 11,
+    "version": 12,
     "updateUrl": "https://moang.blueat.me/rules/damoang.mng",
     "site": {
         "name": "다모앙",
@@ -826,6 +826,11 @@
                         "type": "string",
                         "normalization": [
                             {
+                                "type": "regexReplace",
+                                "pattern": "작성일",
+                                "replacement": ""
+                            },
+                            {
                                 "type": "trim"
                             }
                         ]
@@ -852,9 +857,14 @@
                         ]
                     },
                     "date": {
-                        "selector": ".orangered",
+                        "selector": ".ms-auto",
                         "type": "string",
                         "normalization": [
+                            {
+                                "type": "regexReplace",
+                                "pattern": "작성일",
+                                "replacement": ""
+                            },
                             {
                                 "type": "trim"
                             }
