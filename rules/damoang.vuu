@@ -1,5 +1,5 @@
 {
-    "version": 15,
+    "version": 16,
     "updateUrl": "https://vuu.blueat.me/rules/damoang.vuu",
     "site": {
         "name": "다모앙",
@@ -160,7 +160,7 @@
                         ]
                     },
                     "body": {
-                        "selector": "#bo_v_img, #bo_v_con .na-convert, #bo_v_data .text-truncate",
+                        "selector": "#bo_v_img, div.na-videowrap, #bo_v_con .na-convert, #bo_v_data .text-truncate",
                         "type": "html",
                         "joinValues": true
                     }
